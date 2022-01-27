@@ -553,6 +553,7 @@
   text-decoration: underline;
   color: #FFFFFF;
   transition: 1s;
+  align-self: flex-start;
 }
 
 .place__link:hover {
