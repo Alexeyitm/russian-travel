@@ -1,0 +1,28 @@
+.lead {
+  max-width: 984px;
+  margin: 0 auto;
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .lead {
+    max-width: calc(928px + (984 - 928) * (100vw - 1024px) / (1280 - 1024));
+    padding-top: calc(48px + (56 - 48) * (100vw - 1024px) / (1280 - 1024));
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .lead {
+    max-width: calc(768px + (928 - 768) * (100vw - 768px) / (1024 - 768));
+    padding-top: 48px
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead {
+    max-width: 100%;
+    padding-top: 48px
+  }
+}
