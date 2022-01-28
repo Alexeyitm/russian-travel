@@ -1,7 +1,7 @@
 .cover {
   max-width: 1184px;
   height: 740px;
-  background-image: url(../russian-travel/image/cover-trains.jpg);
+  background-image: url(../../../russian-travel/image/cover-trains.jpg);
   margin: 0 auto;
   background-size: cover;
   display: flex;
