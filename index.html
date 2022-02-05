@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="./pages/index.css">
   <title>Путешествия по России</title>
 </head>
-<body>
-  <div class="page">
+<body class="page">
+  <div class="content">
 
     <header class="header">
-      <div class="header__img"></div>
-      <ul class="header__link">
-        <li><a class="header__ru" href="#">Ru</a></li>
-        <li><a class="header__en" href="#">En</a></li>
+      <div class="header__logo"></div>
+      <ul class="header__links">
+        <li><a class="header__link header__link_active" href="#">Ru</a></li>
+        <li><a class="header__link" href="#">En</a></li>
       </ul>
     </header>
 
@@ -38,13 +38,13 @@
           Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку
           троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной 
           стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
-        <div class="intro__list">
-          <p class="intro__paragraph">Часовых поясов <span class="intro__number">11</span></p>
-          <p class="intro__paragraph">Объектов природного наследия ЮНЕСКО <span class="intro__number">12</span></p>
-          <p class="intro__paragraph">Объектов культурного наследия ЮНЕСКО <span class="intro__number">16</span></p>
-          <p class="intro__paragraph">Природных заповедников <span class="intro__number">105</span></p>
-          <p class="intro__paragraph">Аэропортов <span class="intro__number">241</span></p>
-        </div>
+        <ul class="intro__list">
+          <li class="intro__paragraph">Часовых поясов <span class="intro__number">11</span></li>
+          <li class="intro__paragraph">Объектов природного наследия ЮНЕСКО <span class="intro__number">12</span></li>
+          <li class="intro__paragraph">Объектов культурного наследия ЮНЕСКО <span class="intro__number">16</span></li>
+          <li class="intro__paragraph">Природных заповедников <span class="intro__number">105</span></li>
+          <li class="intro__paragraph">Аэропортов <span class="intro__number">241</span></li>
+        </ul>
       </section>
 
       <section class="photo-grid">
@@ -63,7 +63,7 @@
       </section>
 
       <section class="places">
-        <div class="place">
+        <article class="place">
           <h2 class="place__title">Куршская коса</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -79,8 +79,8 @@
                и немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает суету,
                 окуная в спокойствие природы и запах стального, прохладного моря.</p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Кольский</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -95,8 +95,8 @@
                 пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть 
                 северное сияние начинает сбываться с билетом в Мурманск.</p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Алтай</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -111,8 +111,8 @@
                местной флоры и фауны. По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. 
                И знаменитые манулы — тоже обитатели Алтайского края.</p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Зимний Байкал</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -126,8 +126,8 @@
               Это такой вид спорта, когда лыжник привязывает себя к мотоциклу, и тандем старается развить как можно бóльшую 
               скорость на льду. В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Карелия</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -143,17 +143,14 @@
                 тропы. А на редких тропинках деревья в паре метров от земли помечены медвежьими когтями.
                  Чтобы все знали, кто тут хозяин.</p>
           </div>
-        </div>
+        </article>
       </section>
 
       <section class="cover">
-        <a class="cover__link" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank">
+        <a class="cover__overlay" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank">
           <h2 class="cover__title">До Байкала «на&#160;собаках»</h2>
-        </a>
-        <a class="cover__link" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank">
           <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.</p>
         </a>
-        <a class="cover__overlay" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank"></a>
       </section>
     </main>
 

@@ -6,7 +6,6 @@
   font-size: 18px;
   line-height: 1.22;
   text-align: center;
-  z-index: 1;
 }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
@@ -20,6 +19,6 @@
   .cover__subtitle {
     font-size: 14px;
     max-width: 288px;
-    height: 1.14;
+    line-height: 1.14;
   }
 }

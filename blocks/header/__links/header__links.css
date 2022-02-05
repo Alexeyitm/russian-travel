@@ -1,0 +1,21 @@
+.header__links {
+  width: 76px;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 18px 0 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  .header__links {
+    width: calc(62px + (76 - 62) * (100vw - 320px) / (768 - 320));
+  }
+}
+
+@media screen and (max-width: 320px){
+  .header__links {
+    width: 62px;
+  }
+}

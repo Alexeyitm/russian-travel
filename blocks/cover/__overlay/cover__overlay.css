@@ -1,13 +1,11 @@
 .cover__overlay {
   width: 100%;
   height: 100%;
-  background: #2A2C2F;
-  opacity: 0.3;
-  position: absolute;
-  transition: .5s;
-}
-
-.cover__overlay:hover {
-  opacity: .8;
-  transition: .5s;
+  position: absolute;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #FFFFFF;
 }

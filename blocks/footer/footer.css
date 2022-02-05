@@ -20,26 +20,12 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .footer {
-    max-width: calc(720px + (928 - 720) * (100vw - 768px) / (1024 - 768));
-    padding-top: calc(88px + (92 - 88) * (100vw - 768px) / (1024 - 768));
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .footer {
-    max-width: calc(720px + (928 - 720) * (100vw - 768px) / (1024 - 768));
-    padding-top: calc(88px + (92 - 88) * (100vw - 768px) / (1024 - 768));
-  }
-}
-
 @media screen and (max-width: 767px) {
   .footer {
     flex-direction: column;
     justify-content: space-between;
     width: 351.84px;
-    height: 310px;
+    min-height: 310px;
   }
 }
 
