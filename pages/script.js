@@ -1,6 +1,6 @@
 import { buttonRu, buttonEn, title ,leadTitle, leadSubtitle, leadCaption,
    introTitle, introText, introSubtitle, placeTitles, placeParagraphs, 
-   coverTitle, coverSubtitle, footerLinks, footerCopy } from './constants.js'
+   coverTitle, coverSubtitle, footerLinks, footerCopy } from '../script/constants.js'
 
 
 
