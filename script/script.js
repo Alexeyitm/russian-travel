@@ -1,39 +1,25 @@
-//buttons
-let buttonRu = document.querySelector('.header__button-ru');
-let buttonEn = document.querySelector('.header__button-en');
+import { buttonRu, buttonEn, title ,leadTitle, leadSubtitle, leadCaption,
+   introTitle, introText, introSubtitle, placeTitles, placeParagraphs, 
+   coverTitle, coverSubtitle, footerLinks, footerCopy } from './constants.js'
 
-
-//text elements
-let title = document.querySelector('.title');
-let leadTitle = document.querySelector('.lead__title');
-let leadSubtitle = document.querySelector('.lead__subtitle');
-let leadCaption = document.querySelector('.lead__caption');
-let introTitle = document.querySelector('.intro__title');
-let introText = document.querySelector('.intro__text');
-let introParagraphs = document.querySelectorAll('.intro__paragraph');
-let placeTitles = document.querySelectorAll('.place__title');
-let placeParagraphs = document.querySelectorAll('.place__paragraph');
-let coverTitle = document.querySelector('.cover__title');
-let coverSubtitle = document.querySelector('.cover__subtitle');
-let footerLinks = document.querySelectorAll('.footer__link');
-let footerCopy = document.querySelector('.footer__copyright');
 
 
 //change launguage
 buttonRu.addEventListener('click', function () {
-  buttonRu.classList.add('header__link_active');
-  buttonEn.classList.remove('header__link_active');
+  buttonRu.classList.toggle('header__link_active');
+  buttonEn.classList.toggle('header__link_active');
+
   title.textContent = 'Путешествия по России';
   leadTitle.textContent = 'Путешествия по России';
   leadSubtitle.textContent = 'Настоящая страна не в выпусках новостей, а здесь.';
   leadCaption.textContent = 'ваша полка — верхняя';
   introTitle.textContent = 'Чего мы там не видели?';
   introText.textContent = 'По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.';
-  introParagraphs[0].innerHTML = '<li class="intro__paragraph">Часовых поясов <span class="intro__number">11</span></li>';
-  introParagraphs[1].innerHTML = '<li class="intro__paragraph">Объектов природного наследия ЮНЕСКО <span class="intro__number">12</span></li>';
-  introParagraphs[2].innerHTML = '<li class="intro__paragraph">Объектов культурного наследия ЮНЕСКО <span class="intro__number">16</span></li>';
-  introParagraphs[3].innerHTML = '<li class="intro__paragraph">Природных заповедников <span class="intro__number">105</span></li>';
-  introParagraphs[4].innerHTML = '<li class="intro__paragraph">Аэропортов <span class="intro__number">241</span></li>';
+  introSubtitle[0].textContent = 'Часовых поясов';
+  introSubtitle[1].textContent = 'Объектов природного наследия ЮНЕСКО';
+  introSubtitle[2].textContent = 'Объектов культурного наследия ЮНЕСКО';
+  introSubtitle[3].textContent = 'Природных заповедников';
+  introSubtitle[4].textContent = 'Аэропортов';
   placeTitles[0].textContent = 'Куршская коса';
   placeTitles[1].textContent = 'Кольский';
   placeTitles[2].textContent = 'Алтай';
@@ -48,14 +34,14 @@ buttonRu.addEventListener('click', function () {
   placeParagraphs[6].textContent = 'Всем известен Байкал как крупнейшее озеро в мире. Многие также знают, что это самый большой источник пресной воды и одно из красивейших мест в России.';
   placeParagraphs[7].textContent = 'Конечно, это всё так. Но Байкал ещё идеальное место для соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя к мотоциклу, и тандем старается развить как можно бóльшую скорость на льду. В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.';
   placeParagraphs[8].textContent = 'Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу, видевшему солнце раньше, чем увидал его Иван Грозный. В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.';
-  coverTitle.innerHTML = '<h2 class="cover__title">До Байкала «на&#160;собаках»</h2>';
+  coverTitle.textContent = 'До Байкала «на\u00A0собаках»';
   coverSubtitle.textContent = 'По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.';
   footerLinks[0].textContent = 'Карты';
   footerLinks[1].textContent = 'Погода';
   footerLinks[2].textContent = 'Расписание';
   footerLinks[3].textContent = 'Календарь';
   footerLinks[4].textContent = 'Путешествия';
-  footerCopy.innerHTML = '<p class="footer__copyright" &copy; 2022. Алексей Пономарев</p>';
+  footerCopy.textContent = '\u00A9 2022. Алексей Пономарев';
 });
 
 buttonEn.addEventListener('click', function () {
@@ -67,11 +53,11 @@ buttonEn.addEventListener('click', function () {
   leadCaption.textContent = 'your shelf - top';
   introTitle.textContent = "What didn't we see there?";
   introText.textContent = 'According to VTsIOM polls, 95% of Russians dream of going somewhere, but only 36% plan to spend their holidays in their home country. Like, why are we here, at home, did not see? In fact, Russia is a whole universe with the gentle sea of ​​the south, dense forests of the Sayans and the harsh ice of the Putorana Plateau. And see all these beauty is possible without millions in the account, a passport and many hours of flights. Like, for example, Vera Bashmakova, a brave young mother who took three children, put them in her "Lada" and drove 20 thousand kilometers in her native country. We have selected and described some interesting places worthy of your vacation.';
-  introParagraphs[0].innerHTML = '<li class="intro__paragraph">Time zones <span class="intro__number">11</span></li>';
-  introParagraphs[1].innerHTML = '<li class="intro__paragraph">UNESCO natural heritage sites <span class="intro__number">12</span></li>';
-  introParagraphs[2].innerHTML = '<li class="intro__paragraph">UNESCO cultural heritage sites <span class="intro__number">16</span></li>';
-  introParagraphs[3].innerHTML = '<li class="intro__paragraph">Nature reserves <span class="intro__number">105</span></li>';
-  introParagraphs[4].innerHTML = '<li class="intro__paragraph">Airports <span class="intro__number">241</span></li>';
+  introSubtitle[0].textContent = 'Time zones';
+  introSubtitle[1].textContent = 'UNESCO natural heritage sites';
+  introSubtitle[2].textContent = 'UNESCO cultural heritage sites';
+  introSubtitle[3].textContent = 'Nature reserves';
+  introSubtitle[4].textContent = 'Airports';
   placeTitles[0].textContent = 'Curonian spit';
   placeTitles[1].textContent = 'Kolskiy';
   placeTitles[2].textContent = 'Altay';
@@ -86,12 +72,12 @@ buttonEn.addEventListener('click', function () {
   placeParagraphs[6].textContent = 'Everyone knows Baikal as the largest lake in the world. Many also know that this is the largest source of fresh water and one of the most beautiful places in Russia.';
   placeParagraphs[7].textContent = "Of course, it's all true. But Baikal is still an ideal place for skiing competitions. This is a sport where a skier ties himself to a motorcycle and the tandem tries to develop as much ice speed. In March 2019, a world record was set at the Baikal Mile festival - 197.011 km/h.";
   placeParagraphs[8].textContent = "Siberia ends not in the Urals, but in Karelia: forming the taiga Siberian larch does not grow west of Vodlozero. But here she swings 30 meters — the forests of the Karelian national parks have never known an ax because of the impenetrable swamps. Some pines are more than half a millennium old. Touch a living being who has seen the sun before Ivan the Terrible saw it. In the virgin forest for a hundred kilometers you will not meet trails. And on rare paths, trees a couple of meters from the ground are marked with bear claws. Let everyone know who's boss.";
-  coverTitle.innerHTML = '<h2 class="cover__title">To Baikal «on&#160;dogs»</h2>';
+  coverTitle.textContent = 'To Baikal «on\u00A0dogs»';
   coverSubtitle.textContent = 'Based on the educational topic about the Trans-Siberian Railway - a journey from the capital to Baikal by electric trains.';
   footerLinks[0].textContent = 'Cards';
   footerLinks[1].textContent = 'Weather';
   footerLinks[2].textContent = 'Schedule';
   footerLinks[3].textContent = 'Calendar';
   footerLinks[4].textContent = 'Travels';
-  footerCopy.innerHTML = '<p class="footer__copyright"> &copy; 2022. Alexey Ponomarev</p>';
+  footerCopy.textContent = '\u00A9 2022. Alexey Ponomarev';
 });
